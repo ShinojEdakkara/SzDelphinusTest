@@ -12,7 +12,7 @@ using CseLabs.Middleware;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CSApp
+namespace SzDelphinusTest
 {
     /// <summary>
     /// Main application class

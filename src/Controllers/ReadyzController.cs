@@ -3,7 +3,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace CSApp.Controllers
+namespace SzDelphinusTest.Controllers
 {
     /// <summary>
     /// Handle the /readyz requests

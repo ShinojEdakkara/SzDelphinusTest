@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Web;
-using CSApp;
+using SzDelphinusTest;
 using Microsoft.AspNetCore.Http;
 using Microsoft.CorrelationVector;
 using Microsoft.Extensions.Logging;
@@ -46,7 +46,7 @@ namespace CseLabs.Middleware
             }
 
             requestHistogram = Metrics.CreateHistogram(
-                        "CSAppDuration",
+                        "SzDelphinusTestDuration",
                         "Histogram of app request duration",
                         new HistogramConfiguration
                         {
@@ -55,7 +55,7 @@ namespace CseLabs.Middleware
                         });
 
             requestSummary = Metrics.CreateSummary(
-                "CSAppSummary",
+                "SzDelphinusTestSummary",
                 "Summary of app request duration",
                 new SummaryConfiguration
                 {
@@ -66,7 +66,7 @@ namespace CseLabs.Middleware
                 });
 
             cpuGauge = Metrics.CreateGauge(
-                "CSAppCpuPercent",
+                "SzDelphinusTestCpuPercent",
                 "CPU Percent Used",
                 new GaugeConfiguration
                 {
